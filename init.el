@@ -44,6 +44,7 @@
 
 (progn
   (dolist (r '(init-go
+               init-multiple-cursors
 	       ))
     (funcall 'require r)))
 
