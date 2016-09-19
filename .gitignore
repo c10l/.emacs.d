@@ -20,5 +20,5 @@ lispcustom.el
 /lisp/.tern-port
 /tmp
 /url
-.emacs.desktop
+.emacs.desktop*
 games/

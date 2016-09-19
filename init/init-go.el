@@ -2,8 +2,8 @@
                             auto-complete
                             go-eldoc
                             go-autocomplete
-                            go-flymake
-                            go-flycheck))
+                            ))
+(setenv "GOPATH" "/Users/cassiano/Projects/goworkspace")
 (use-package go-mode
   :mode ("\\.go\\'" . go-mode)
   :init
