@@ -23,3 +23,5 @@ custom.el
 .emacs.desktop*
 games/
 recentf
+project-explorer-cache/
+.last-package-update-day

@@ -29,7 +29,7 @@
 (defconst *is-mac*   (eq system-type 'darwin)              "is macos")
 (defconst *is-cocoa* (and *is-mac* (eq window-system 'ns)) "is cocoa")
 
-(require 'init-packages)
+(require 'head-packages)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -37,15 +37,16 @@
   (dolist (r '(init-go
                init-multiple-cursors
                init-puppet
+               init-helm
 	       ))
     (funcall 'require r)))
 
 (when *is-mac*
-  (require 'init-mac))
+  (require 'tail-mac))
 
-(require 'init-defaults)
-(require 'init-appearance)
-(require 'init-keybindings)
+(require 'tail-defaults)
+(require 'tail-appearance)
+(require 'tail-keybindings)
 
 (setq custom-file (concat base-path "custom.el"))
 (load custom-file 'noerror)

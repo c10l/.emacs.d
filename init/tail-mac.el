@@ -10,4 +10,4 @@
 
 (when window-system (set-exec-path-from-shell-PATH))
 
-(provide 'init-mac)
+(provide 'tail-mac)

@@ -1,3 +1,3 @@
 (global-set-key (kbd "M-p") 'ace-window)
 
-(provide 'init-keybindings)
+(provide 'tail-keybindings)

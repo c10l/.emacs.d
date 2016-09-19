@@ -12,4 +12,13 @@
 (package-install 'use-package)
 (require 'use-package)
 
-(provide 'init-packages)
+(use-package auto-package-update
+  :ensure
+  :config
+  (progn
+    (auto-package-update-maybe)
+    (setq auto-package-update-delete-old-versions t)
+    (setq auto-package-update-interval 1)
+    ))
+
+(provide 'head-packages)

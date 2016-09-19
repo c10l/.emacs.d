@@ -5,4 +5,4 @@
 (use-package beacon :ensure)
 (beacon-mode 1)
 
-(provide 'init-appearance)
+(provide 'tail-appearance)
