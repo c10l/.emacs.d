@@ -17,7 +17,6 @@ emms
 .mc-lists.el
 lispcustom.el
 /eshell
-/lisp/.tern-port
 /tmp
 /url
 .emacs.desktop*
