@@ -22,3 +22,4 @@ lispcustom.el
 .emacs.desktop*
 games/
 initcustom.el
+recentf

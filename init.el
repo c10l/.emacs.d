@@ -37,7 +37,7 @@
  '(ace-window
    darkokai-theme
    beacon
-   flycheck-pos-tip
+  ;  flycheck-pos-tip
 ))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -54,8 +54,8 @@
 (require 'init-appearance)
 (require 'init-keybindings)
 
-(with-eval-after-load 'flycheck
-  (flycheck-pos-tip-mode))
+; (with-eval-after-load 'flycheck
+;   (flycheck-pos-tip-mode))
 
 (setq custom-file (concat base-path "custom.el"))
 (load custom-file 'noerror)
