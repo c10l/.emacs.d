@@ -1,6 +1,5 @@
-(install-missing-packages '(multiple-cursors))
-
 (use-package multiple-cursors
+  :ensure
   :init
   (progn
     (global-set-key (kbd "C->") 'mc/mark-next-like-this)

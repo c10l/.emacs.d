@@ -15,11 +15,11 @@ emms
 .yas-compiled-snippets.el
 .cask
 .mc-lists.el
-lispcustom.el
+initcustom.el
+custom.el
 /eshell
 /tmp
 /url
 .emacs.desktop*
 games/
-initcustom.el
 recentf

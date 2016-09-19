@@ -1,8 +1,9 @@
 (defalias 'yes-or-no-p 'y-or-n-p) ;; Answering with just 'y' or 'n'
 
-(install-missing-packages '(auto-complete))
-(use-package auto-complete)
+(use-package auto-complete :ensure)
 (ac-config-default)
+
+(use-package ace-window :ensure)
 
 ;; Auto refresh buffers
 (global-auto-revert-mode 1)

@@ -1,20 +1,15 @@
-(install-missing-packages '(go-mode
-                            auto-complete
-                            go-autocomplete
-                            go-eldoc
-                            gotest
-                            go-errcheck
-                            flycheck
-                            ))
 (setenv "GOPATH" "/Users/cassiano/Projects/goworkspace")
 (use-package go-mode
+  :ensure
   :mode ("\\.go\\'" . go-mode)
   :init
   (progn
-    (use-package auto-complete)
-    (use-package go-eldoc)
-    (use-package go-autocomplete)
-    (use-package flycheck)
+    (use-package auto-complete   :ensure)
+    (use-package go-autocomplete :ensure)
+    (use-package go-eldoc        :ensure)
+    (use-package gotest          :ensure)
+    (use-package go-errcheck     :ensure)
+    (use-package flycheck        :ensure)
     (set-face-attribute 'go-eldoc-gocode
                         "/Users/cassiano/Projects/goworkspace/bin/gocode")
     (add-hook 'go-mode-hook

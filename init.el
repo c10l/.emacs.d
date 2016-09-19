@@ -1,6 +1,5 @@
 ;;; -*- lexical-binding: t -*-
 
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -32,14 +31,6 @@
 
 (require 'init-packages)
 
-;; Install Missing Packages
-(install-missing-packages
- '(ace-window
-   darkokai-theme
-   beacon
-  ;  flycheck-pos-tip
-))
-
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (progn
@@ -55,9 +46,6 @@
 (require 'init-defaults)
 (require 'init-appearance)
 (require 'init-keybindings)
-
-; (with-eval-after-load 'flycheck
-;   (flycheck-pos-tip-mode))
 
 (setq custom-file (concat base-path "custom.el"))
 (load custom-file 'noerror)
