@@ -21,3 +21,4 @@ lispcustom.el
 /url
 .emacs.desktop*
 games/
+initcustom.el

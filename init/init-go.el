@@ -1,7 +1,9 @@
 (install-missing-packages '(go-mode
                             auto-complete
-                            go-eldoc
                             go-autocomplete
+                            go-eldoc
+                            gotest
+                            go-errcheck
                             ))
 (setenv "GOPATH" "/Users/cassiano/Projects/goworkspace")
 (use-package go-mode
