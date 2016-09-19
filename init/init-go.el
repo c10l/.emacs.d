@@ -4,6 +4,7 @@
                             go-eldoc
                             gotest
                             go-errcheck
+                            flycheck
                             ))
 (setenv "GOPATH" "/Users/cassiano/Projects/goworkspace")
 (use-package go-mode
@@ -13,14 +14,16 @@
     (use-package auto-complete)
     (use-package go-eldoc)
     (use-package go-autocomplete)
-    (use-package go-flymake)
-    (use-package go-flycheck)
+    (use-package flycheck)
+    (set-face-attribute 'go-eldoc-gocode
+                        "/Users/cassiano/Projects/goworkspace/bin/gocode")
     (add-hook 'go-mode-hook
               (lambda ()
                 (setq gofmt-command "goimports")
 
                 (go-set-project)
 
+                (flycheck-mode)
                 (auto-complete-mode)
                 (go-eldoc-setup)
                 (add-hook 'before-save-hook 'gofmt-before-save)

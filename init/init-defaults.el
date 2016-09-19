@@ -1,3 +1,9 @@
+(install-missing-packages '(auto-complete))
+(use-package auto-complete)
+(ac-config-default)
+
+; (global-flycheck-mode)
+
 ;; Set PATH from shell
 (defun set-exec-path-from-shell-PATH ()
   (let ((path-from-shell (replace-regexp-in-string
