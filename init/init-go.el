@@ -1,4 +1,3 @@
-(setenv "GOPATH" "/Users/cassiano/Projects/goworkspace")
 (use-package go-mode
   :ensure
   :mode ("\\.go\\'" . go-mode)
