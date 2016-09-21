@@ -16,7 +16,7 @@
 (add-to-list 'load-path base-path)
 
 (make-directory
- (setq tmp-local-dir (expand-file-name "tmp" user-emacs-directory)) t)
+  (setq tmp-local-dir (expand-file-name "tmp" user-emacs-directory)) t)
 
 (dolist (project (directory-files base-path t "\\w+"))
   (when (file-directory-p project)
