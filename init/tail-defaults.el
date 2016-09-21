@@ -25,7 +25,7 @@
 ;; Show me empty lines after buffer end
 (set-default 'indicate-empty-lines t)
 
-; (global-flycheck-mode)
+(setq ibuffer-default-sorting-mode 'major-mode)
 
 (desktop-save-mode 1)
 
