@@ -16,6 +16,12 @@
     (global-nlinum-mode 1)
     (add-hook 'nlinum-mode-hook 'my-nlinum-mode-hook)))
 
+(use-package git-gutter-fringe+
+  :ensure
+  :config
+  (progn
+    (global-git-gutter+-mode)))
+
 (use-package beacon
   :ensure
   :config
