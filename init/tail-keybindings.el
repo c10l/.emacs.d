@@ -1,3 +1,5 @@
+(global-set-key (kbd "C-/") 'comment-or-uncomment-region)
+
 ;; ace-window
 (global-set-key (kbd "M-p") 'ace-window)
 
