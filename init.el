@@ -39,6 +39,7 @@
                init-puppet
                init-helm
                init-ace-jump-mode
+               init-projectile
 	       ))
     (funcall 'require r)))
 
