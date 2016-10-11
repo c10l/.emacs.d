@@ -38,6 +38,7 @@
                init-multiple-cursors
                init-puppet
                init-helm
+               init-ace-jump-mode
 	       ))
     (funcall 'require r)))
 
