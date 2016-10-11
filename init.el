@@ -40,6 +40,7 @@
                init-helm
                init-ace-jump-mode
                init-projectile
+               init-docker
 	       ))
     (funcall 'require r)))
 
