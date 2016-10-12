@@ -41,6 +41,7 @@
                init-ace-jump-mode
                init-projectile
                init-docker
+               init-yaml
 	       ))
     (funcall 'require r)))
 
