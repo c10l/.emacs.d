@@ -42,6 +42,7 @@
                init-projectile
                init-docker
                init-yaml
+               init-terraform
 	       ))
     (funcall 'require r)))
 
