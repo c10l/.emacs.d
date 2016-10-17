@@ -22,10 +22,4 @@
   (progn
     (global-git-gutter+-mode)))
 
-(use-package beacon
-  :ensure
-  :config
-  (progn
-    (beacon-mode 1)))
-
 (provide 'tail-appearance)
