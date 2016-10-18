@@ -16,4 +16,7 @@
 (global-set-key (kbd "C-c C-l") 'mc/mark-all-like-this)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
+;; Markdown preview
+(global-set-key (kbd "C-c C-c f") 'flymd-flyit)
+
 (provide 'tail-keybindings)
