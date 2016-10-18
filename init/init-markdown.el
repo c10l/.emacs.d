@@ -14,4 +14,6 @@
 (use-package flymd
   :ensure t)
 
+(global-set-key [remap markdown-preview] 'flymd-flyit)
+
 (provide 'init-markdown)
