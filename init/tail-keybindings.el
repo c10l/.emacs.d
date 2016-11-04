@@ -16,4 +16,7 @@
 (global-set-key (kbd "C-c C-l") 'mc/mark-all-like-this)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
+;; refresh neotree with project
+(global-set-key (kbd "C-c p n") 'neotree-projectile-action)
+
 (provide 'tail-keybindings)
