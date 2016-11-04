@@ -53,6 +53,7 @@
                init-yaml
                init-terraform
                init-markdown
+               init-shell
 	       ))
     (funcall 'require r)))
 
